@@ -131,7 +131,7 @@ check_curl() {
 check_shodan() {
     local wan_ip="$1"
     local response
-    response=$(curl -sf --max-time 10 \
+    response=$(curl -s --max-time 10 \
         "https://internetdb.shodan.io/${wan_ip}" \
         2>/dev/null || echo "")
 
