@@ -13,7 +13,7 @@ set -euo pipefail
 
 INSTALL_DIR="/opt/unifi-monitor"
 SCRIPT_NAME="unifi_monitor.sh"
-REPO_URL="git@github.com:yourusername/your-repo.git"   # Update this
+REPO_URL="https://github.com/romvek/UniFi-Exposure-Monitor.git"   # Update this
 
 echo "=== UniFi Exposure Monitor Setup ==="
 

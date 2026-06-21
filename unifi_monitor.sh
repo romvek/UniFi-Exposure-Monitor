@@ -12,7 +12,9 @@
 #
 # Dependencies: curl, dnsutils (dig), git
 # Config: copy config.env.example to config.env and fill in your values
-# Schedule: see /etc/cron.d/unifi-monitor for schedule options
+# Schedule: see /etc/cron.d/unifi-monitor for schedule options. 
+# Telegram: configured to alert on every run for warnings/exposures,
+#   clean confirmations are throttled to once per day.
 # =============================================================================
 
 set -euo pipefail
