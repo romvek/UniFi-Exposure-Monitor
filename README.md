@@ -9,9 +9,13 @@ Ok... cool, now what? I wanted to create a monitor to alert me if my gateway eve
 - Can it be done better? Probably, definitely.
 - Did I learn something? Absolutely!!
 While trying to add more context for the reason why I created this, I ran some searches trying to find the exact vulnerability I originally saw that sparked this project. 
+
 **CVE-2026-34908 - CVE-2026-34909 - CVE-2026-34910**
 - [Bishop Fox: Popping Root on UniFi OS Server: Unauthenticated RCE Chain Detection & Analysis](https://bishopfox.com/blog/popping-root-on-unifi-os-server-unauthenticated-rce-chain-detection-analysis)
 - [UniFi - Security Advisory Bulletin 064](https://community.ui.com/releases/Security-Advisory-Bulletin-064-064/84811c09-4cf4-42ab-bd61-cc994445963b)
+
+Mitigation:
+Update your UniFi OS Server to Version 5.0.8 or later
 
 ---
 
