@@ -268,6 +268,7 @@ Set `WAN_IP` manually in `config.env`.
 
 ```
 .
+├── /images                # Images for README file 
 ├── unifi_monitor.sh       # Main monitoring script
 ├── setup.sh               # One-time bootstrap script
 ├── grafana_dashboard.json # Grafana dashboard import file
