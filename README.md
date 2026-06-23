@@ -36,9 +36,9 @@ Results are scored as:
 - `1` — **WARNING**: DNS or curl anomaly, stale Shodan data, or Shodan unavailable
 - `2` — **EXPOSED**: one or more UniFi ports confirmed open in Shodan
 
-<img width="50%" src="https://github.com/romvek/UniFi-Exposure-Monitor/blob/main/images/uem.png">
+<img width="50%" src="https://github.com/romvek/UniFi-Exposure-Monitor/blob/main/images/uem.png" alt="Grafana Dashboard">
 
-<img width="50%" src="https://github.com/romvek/UniFi-Exposure-Monitor/blob/main/images/telegram.png">
+<img width="50%" src="https://github.com/romvek/UniFi-Exposure-Monitor/blob/main/images/telegram.png" alt="Telegram Message">
 
 > **Why Shodan instead of nmap?** Running nmap from inside your network against your own WAN IP triggers NAT loopback — your router responds internally, producing false positives. Shodan scans from the actual internet and gives you a true outside-in perspective.
 
