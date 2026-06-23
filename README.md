@@ -36,19 +36,21 @@ Results are scored as:
 - `1` — **WARNING**: DNS or curl anomaly, stale Shodan data, or Shodan unavailable
 - `2` — **EXPOSED**: one or more UniFi ports confirmed open in Shodan
 
+<img width="50%" src="https://github.com/romvek/UniFi-Exposure-Monitor/blob/main/images/uem.png">
+
+<img width="50%" src="https://github.com/romvek/UniFi-Exposure-Monitor/blob/main/images/telegram.png">
+
 > **Why Shodan instead of nmap?** Running nmap from inside your network against your own WAN IP triggers NAT loopback — your router responds internally, producing false positives. Shodan scans from the actual internet and gives you a true outside-in perspective.
 
 ---
 
 ## Prerequisites
 
-- A Linux host — a VM, LXC container, Docker container, or VPS running **Debian 12** or **Ubuntu 22.04+**
-- **Prometheus** already running on your network
+- Linux host — a VM, LXC container, Docker container, or VPS running **Debian 12+** or **Ubuntu 22.04+**
+- **Prometheus** running on your network
 - **Prometheus Pushgateway** running and configured as a scrape target in `prometheus.yml`
 - **Grafana** pointed at your Prometheus instance
-- A **Telegram bot** (setup instructions below)
-- A **Shodan account** with an API key — free tier supported (https://account.shodan.io)
-- A **private GitHub repo** (recommended) to host the script
+- **Telegram bot** (setup instructions below)
 
 ---
 
